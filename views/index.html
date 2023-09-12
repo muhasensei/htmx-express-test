@@ -2,6 +2,13 @@
     {{name}}
 </h1>
 
-<div hx-get="/clicked" hx-trigger="click" hx-target="#name" hx-swap="outerHTML">
-    Change name
-</div>
+
+<ul id="list">
+    <li>
+        already existing data
+    </li>
+</ul>
+
+<button hx-get="/load-data" hx-trigger="click" hx-target="#list" hx-swap="beforeend">
+    load data
+</button>

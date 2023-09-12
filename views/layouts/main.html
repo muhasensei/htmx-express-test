@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Main Layout</title>
-    <script src="https://unpkg.com/htmx.org@1.9.5" integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO" crossorigin="anonymous"></script>
-</head>
-<body>
-    {{{body}}}
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTMX Power</title>
+        <script src="/htmx.js"></script>
+    </head>
+    <body>
+        <div hx-boost="true">
+            <a href="/test-page-1">Go To Page 1</a>
+            <br>
+            <a href="/test-page-2">Go To Page 2</a>
+        </div>
+
+        {{{body}}}
+    </body>
 </html>
